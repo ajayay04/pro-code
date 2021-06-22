@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+#include<cstdlib>
+using namespace std;
+
+int main()
+{
+	string s = "3+4=x";
+	string s1 = "ajay ";
+	string s2 = "singh";
+	
+	int i;
+	
+	for(i=0; i<s.size(); i++)
+	{
+		if(s[i] == 'x')
+			break;		
+	}	
+	if(i==4){
+		char f = s[0];
+		int a = f - '0';
+		 f = s[2];
+		int b = f - '0';
+		cout<<a+b;
+	}
+	else if(i == 2)
+		cout<<s[4]-s[0];
+	else if(i==0)
+		cout<<s[4]-s[2];
+	else
+		cout<<"Wrong input."; 
+
+	cout<<endl;
+  
+
+return 0;
+}
